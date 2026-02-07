@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Monospace Timer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Stopwatch</h1>
+        </header>
+
+        <div class="timer-display">
+            <span id="display">00:00:00.00</span>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn start">Start</button>
+            <button id="pauseBtn" class="btn pause" disabled>Pause</button>
+            <button id="resetBtn" class="btn reset" disabled>Reset</button>
+            <button id="lapBtn" class="btn lap" disabled>Lap</button>
+        </div>
+
+        <div class="laps-container">
+            <h3>Laps</h3>
+            <ul id="lapsList">
+                <!-- Laps will be added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
